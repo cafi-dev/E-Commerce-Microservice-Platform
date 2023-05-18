@@ -5,6 +5,7 @@ terraform {
     bucket = "cafi-demo1"
     key    = "E-Commerce-Microservice-Platform/infrastructure/terraform.tfstate"
     region = "us-east-1"
+    role_arn = "arn:aws:iam::180217099948:role/atlantis-access"
   }
 
   required_providers {
@@ -17,5 +18,8 @@ terraform {
 
 provider "aws" {
   region = var.region
+  assume_role {
+    role_arn = "arn:aws:iam::180217099948:role/atlantis-access"
+  }
 }
 

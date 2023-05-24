@@ -5,8 +5,8 @@ projects:
   autoplan:
     enabled: true
     when_modified: ["*.tf", "*.tfvars"]
-- dir: appCD
-  workflow: default
-  autoplan:
-    enabled: true
-    when_modified: ["*.tf", "*.tfvars"]
+#- dir: appCD
+#  workflow: default
+#  autoplan:
+#    enabled: true
+#    when_modified: ["*.tf", "*.tfvars"]
